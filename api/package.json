@@ -1,0 +1,23 @@
+{
+  "name": "e2e_boilerplate_example_api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.ts",
+  "scripts": {
+    "start": "ts-node index.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "sk39",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "express": "^4.17.1",
+    "ts-node": "^8.10.2",
+    "typescript": "^3.9.5"
+  },
+  "devDependencies": {
+    "@sk39/dotenv-ex": "^1.0.0",
+    "@types/express": "^4.17.6",
+    "@types/node": "^14.0.14"
+  }
+}
