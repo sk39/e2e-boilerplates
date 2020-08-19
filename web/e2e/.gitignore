@@ -1,0 +1,6 @@
+node_modules/**/*
+npm-debug.*
+output/
+# macOS
+.DS_Store
+/.idea

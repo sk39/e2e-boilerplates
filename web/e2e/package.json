@@ -1,0 +1,29 @@
+{
+  "name": "e2e_boilerplate_web_e2e",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "codeceptjs run",
+    "test:browserstack": "cross-env NODE_ENV=\"browserstack\" codeceptjs run-multiple bs",
+    "test:saucelabs": "cross-env NODE_ENV=\"saucelabs\" codeceptjs run-multiple bs",
+    "browserstack-local:start": "cross-env NODE_ENV=\"browserstack\" node scripts/run-browserstack-local.js start",
+    "browserstack-local:stop": "cross-env NODE_ENV=\"browserstack\" node scripts/run-browserstack-local.js stop",
+    "saucelabs-local": "cross-env NODE_ENV=\"saucelabs\" node scripts/run-saucelabs-local.js"
+  },
+  "author": "sk39",
+  "license": "ISC",
+  "dependencies": {
+    "@sk39/dotenv-ex": "^1.0.0",
+    "@wdio/sauce-service": "^6.4.0",
+    "codeceptjs": "^2.6.8",
+    "codeceptjs-bshelper": "^1.2.6",
+    "puppeteer": "^5.2.1"
+  },
+  "devDependencies": {
+    "browserstack-local": "^1.4.5",
+    "cross-env": "^7.0.2",
+    "kill-port": "^1.6.1",
+    "runjs": "^4.4.2"
+  }
+}
